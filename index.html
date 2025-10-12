@@ -310,4 +310,49 @@
   <!-- Contact -->
   <div class="w3-container w3-light-grey" style="padding:96px 16px" id="contact">
     <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Ready to automate and scale? Let's talk.</
+    <p class="w3-center w3-large">Ready to automate and scale? Let's talk.</p>
+
+    <div style="margin-top:32px;max-width:900px;margin-left:auto;margin-right:auto">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Manila, Philippines</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 930 022 8998</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: lance0145@gmail.com</p>
+
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Company (optional)" name="Company"></p>
+        <p><textarea class="w3-input w3-border" placeholder="Message / Brief" required name="Message" rows="5"></textarea></p>
+        <p>
+          <button class="w3-button btn-primary" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+
+      <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:24px" alt="map">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-48">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section" style="margin-top:12px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p class="w3-small">© <strong>AILan</strong> — AI &amp; Automation Outsourcing</p>
+    <p class="w3-small">Built with W3Schools Spaces template.</p>
+  </footer>
+
+  <script>
+    var mySidebar = document.getElementById("mySidebar");
+    function w3_open(){ mySidebar.style.display = (mySidebar.style.display === 'block') ? 'none' : 'block'; }
+    function w3_close(){ mySidebar.style.display = "none"; }
+    // minimal safety: prevent external widget from blocking rendering on Pages
+    // (If you want to add a chat widget later, include it here with async/defer)
+  </script>
+
+</body>
+</html>
