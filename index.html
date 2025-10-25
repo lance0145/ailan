@@ -1,358 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AILan — AI & Automation Outsourcing</title>
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AILan — AI & Automation (Cartoonish theme)</title>
+  <meta name="description" content="AILan delivers AI-driven automation, ML, and analytics for growing teams. Explore case studies, services, pricing, and contact details." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232c7be5'/%3E%3Ctext x='50' y='58' font-size='46' text-anchor='middle' fill='white' font-family='Baloo, sans-serif'%3EAI%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"AILan",
+    "url":"https://lance0145.github.io/ailan/",
+    "logo":"https://lance0145.github.io/ailan/assets/lead.jpg",
+    "sameAs":["https://www.linkedin.com/in/allan/"],
+    "contactPoint": [{"@type":"ContactPoint","telephone":"+63 930 022 8998","contactType":"customer service","areaServed":"PH"}]
+  }
+  </script>
   <style>
-    :root{
-      --brand:#0B4F6C;
-      --accent:#0B8AA6;
-      --muted:#6b7280;
-    }
-    html,body{height:100%;margin:0;font-family:"Raleway",sans-serif;line-height:1.8}
-    .bgimg-1{
-      background-image:url("https://www.w3schools.com/w3images/mac.jpg");
-      background-position:center;
-      background-size:cover;
-      min-height:100%;
-    }
-    .w3-bar .w3-button{padding:16px}
-    .brand-color{color:var(--brand)}
-    .btn-primary{background:var(--brand);color:#fff;border:0;padding:12px 18px;border-radius:8px}
-    .btn-primary:hover{opacity:.9}
-    .stat-num{color:var(--brand);font-weight:700}
-    h3{margin-top:0}
-    /* subtle header shadow to separate from content on GH Pages if overlayed */
-    .w3-top .w3-bar{box-shadow:0 2px 8px rgba(0,0,0,.06)}
-    /* responsive tweak */
-    @media (max-width:600px){ .w3-display-left{padding:24px} }
+    :root{--bg:#fef6ff;--card:#fff6fb;--accent:#2c7be5;--accent-2:#ffdd57;--muted:#6b6b6b;--shadow:0 10px 30px rgba(44,123,229,0.08)}
+    *{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:'Nunito',system-ui,-apple-system,'Segoe UI',Roboto,'Baloo 2',sans-serif;background:linear-gradient(180deg,var(--bg) 0%,#fff 100%);color:#222;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:28px}
+    .wrap{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#6fb3ff);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transform:rotate(-8deg)}
+    .brand{font-family:'Baloo 2',cursive;font-size:18px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));padding:22px;border-radius:18px;box-shadow:var(--shadow);display:flex;gap:18px;align-items:center}
+    .hero-left{flex:1}h1{font-family:'Baloo 2';font-size:36px;margin:0 0 6px}p.lead{margin:0 0 12px;color:#444;font-size:16px}
+    .cta-row{display:flex;gap:10px}
+    .btn{background:var(--accent);border:none;padding:10px 16px;border-radius:12px;color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 18px rgba(44,123,229,0.12)}.btn.secondary{background:transparent;border:2px solid #dbeeff;color:var(--accent)}
+    .hero-right{width:360px;display:flex;justify-content:center}
+    .card-art{width:340px;height:220px;border-radius:16px;background:linear-gradient(180deg,var(--card),#fff);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:var(--shadow)}.cloud{position:absolute;top:-20px;left:16px;font-size:36px;opacity:0.95}.character{width:150px;transform:translateY(8px)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature{background:linear-gradient(180deg,#ffffff,#fff8ff);padding:14px;border-radius:12px;box-shadow:0 8px 18px rgba(100,30,100,0.04);text-align:center}
+    .team{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+    .member{background:#fff;padding:12px;border-radius:12px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.04)}.member img{width:84px;height:84px;border-radius:12px;object-fit:cover}
+    .stats{display:flex;gap:12px;margin-top:12px;justify-content:space-between}.stat{background:linear-gradient(180deg,#fff,#f7fdff);padding:10px;border-radius:10px;text-align:center;flex:1}
+    .pricing{margin-top:14px;display:flex;gap:12px}
+    .plan{flex:1;border-radius:12px;padding:14px;background:linear-gradient(180deg,#fff,#fff9f4);box-shadow:var(--shadow)}
+    .tile{flex:1;border-radius:12px;overflow:hidden;min-height:110px;background:linear-gradient(180deg,#fff,#fff8f8);display:flex;align-items:center;justify-content:center;padding:12px}
+    .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .case{background:#fff;padding:12px;border-radius:12px;box-shadow:0 8px 22px rgba(20,20,60,0.04)}
+    .testimonials{margin-top:12px}
+    .testimonial{background:linear-gradient(180deg,#fff,#f7fff9);padding:12px;border-radius:12px;margin-bottom:8px}
+    .faq{margin-top:12px}
+    .faq-item{border-radius:10px;padding:10px;background:#fff;margin-bottom:8px}
+    .contact-card{margin-top:14px;padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff,#fffaf6);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between}
+    footer{text-align:center;margin-top:18px;color:var(--muted)}
+    .chatbot{display:grid;grid-template-columns:1fr 340px;gap:14px;margin-top:18px;align-items:center}
+    .chatbot .card{background:#fff;padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.04)}
+    .chatbot ul{margin:8px 0 0 18px;color:var(--muted)}
+    .chatbot .note{font-size:13px;color:var(--muted);margin-top:8px}
+    @media(max-width:880px){.hero{flex-direction:column;align-items:flex-start}.hero-right{width:100%}.features{grid-template-columns:repeat(1,1fr)}.team{grid-template-columns:repeat(2,1fr)}.pricing{flex-direction:column}.case-grid{grid-template-columns:1fr}.chatbot{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-
-  <!-- Top navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button w3-wide brand-color" style="font-weight:700;font-size:18px">AILan</a>
-      <div class="w3-right w3-hide-small">
-        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="#what" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> SERVICES</a>
-        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark" aria-hidden>
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <circle cx="32" cy="32" r="28" fill="#fff" opacity="0.06" />
+            <g transform="translate(10,10)">
+              <rect x="0" y="0" width="44" height="44" rx="10" fill="#fff" opacity="0.04"/>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <div class="brand">AILan</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:4px">Smarter outsourcing. Powered by AI.</div>
+        </div>
       </div>
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#team">Team</a>
+        <a href="#chatbot">AI Chatbot</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Sidebar for small screens -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#what" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  </nav>
-
-  <!-- Header -->
-  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left w3-text-white" style="padding:48px;max-width:720px">
-      <span class="w3-jumbo w3-hide-small">Smarter Outsourcing. Powered by AI.</span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Smarter Outsourcing. Powered by AI.</span><br>
-      <span class="w3-large">We build, deploy, and manage AI &amp; automation solutions so your team can focus on growth.</span>
-      <p><a href="#what" class="w3-button btn-primary w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Explore Services</a></p>
-    </div>
-    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-  </header>
-
-  <!-- About -->
-  <div class="w3-container" style="padding:96px 16px" id="about">
-    <h3 class="w3-center">ABOUT AILAN</h3>
-    <p class="w3-center w3-large">Trusted AI &amp; automation outsourcing for modern businesses</p>
-
-    <div class="w3-row-padding w3-center" style="margin-top:48px">
-      <div class="w3-third">
-        <i class="fa fa-rocket w3-margin-bottom w3-jumbo w3-center brand-color"></i>
-        <p class="w3-large">Scale Faster</p>
-        <p>We deliver scalable AI solutions and staffed operations so you can increase throughput without growing headcount quickly.</p>
+    <section class="hero" id="about" role="region" aria-label="Hero">
+      <div class="hero-left">
+        <h1>Smarter Outsourcing. Powered by AI.</h1>
+        <p class="lead">We build, deploy, and manage AI & automation so your team can focus on strategy — not busywork.</p>
+        <div class="cta-row">
+          <button class="btn" onclick="location.href='#contact'">Talk to Sales</button>
+          <button class="btn secondary" onclick="location.href='#services'">Explore Services</button>
+        </div>
       </div>
-      <div class="w3-third">
-        <i class="fa fa-shield w3-margin-bottom w3-jumbo brand-color"></i>
-        <p class="w3-large">Reliable</p>
-        <p>Managed services and SLAs keep production systems healthy — we monitor, iterate, and support so you don’t have to worry.</p>
+      <div class="hero-right">
+        <div class="card-art">
+          <div class="cloud">🤖</div>
+          <svg class="character" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <rect x="0" y="0" width="200" height="200" rx="20" fill="#eef8ff" opacity="0.4"></rect>
+            <g transform="translate(30,24)">
+              <rect x="20" y="28" width="100" height="80" rx="14" fill="#fff" stroke="#cfe8ff" stroke-width="2"/>
+              <circle cx="70" cy="52" r="20" fill="#2c7be5"/>
+              <circle cx="50" cy="48" r="6" fill="#fff"/>
+              <circle cx="90" cy="48" r="6" fill="#fff"/>
+              <path d="M44 102 Q70 118 96 102" stroke="#2c7be5" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
       </div>
-      <div class="w3-third">
-        <i class="fa fa-line-chart w3-margin-bottom w3-jumbo brand-color"></i>
-        <p class="w3-large">Results Driven</p>
-        <p>From cost reduction to faster response times, our solutions are designed to deliver measurable ROI and business impact.</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Services -->
-  <div class="w3-container w3-light-grey" style="padding:96px 16px" id="what">
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h3>What We Do</h3>
-        <p>AILan designs, implements, and operates AI and automation systems tailored to your business. We combine model development, systems integration, and staffed operations so you get end-to-end execution — from prototype to production.</p>
-        <ul class="w3-ul">
-          <li><b>AI Development &amp; Integration</b> — Custom ML models, LLM prompts &amp; integrations with your tools.</li>
-          <li><b>Process Automation</b> — RPA, workflows, and intelligent agents to remove repetitive tasks.</li>
-          <li><b>Data &amp; Analytics</b> — Data pipelines, dashboards, and insight generation to inform decisions.</li>
-          <li><b>Managed Outsourcing</b> — Ongoing operations, monitoring, and specialist teams on demand.</li>
+    <section id="services" class="features" aria-label="Services">
+      <div class="feature">
+        <div class="icon" style="background:linear-gradient(135deg,var(--accent),#6fb3ff);color:white">🧠</div>
+        <h3>AI Development</h3>
+        <p>Fine-tuning, embeddings, prompt engineering and model integration tailored to your data.</p>
+      </div>
+      <div class="feature">
+        <div class="icon" style="background:linear-gradient(135deg,var(--accent-2),#ffd57a);">⚙️</div>
+        <h3>Automation & RPA</h3>
+        <p>Automate repetitive workflows, invoices, and ticket routing with resilient pipelines.</p>
+      </div>
+      <div class="feature">
+        <div class="icon" style="background:linear-gradient(135deg,#b9a6ff,#b1f0ff);">📊</div>
+        <h3>Data & Analytics</h3>
+        <p>ETL, dashboards, and decisioning systems that turn data into action.</p>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 style="margin-top:14px">Case Studies</h2>
+      <div class="case-grid">
+        <div class="case">
+          <strong>Customer Support Automation</strong>
+          <p style="font-size:13px;color:var(--muted)">LLM-powered virtual agents + human handoff. Result: 45% faster resolution, 30% fewer escalations.</p>
+          <ul style="font-size:13px;color:var(--muted);margin:6px 0 0 18px">
+            <li>Outbound escalation reduced by 30%</li>
+            <li>Average handle time dropped 45%</li>
+          </ul>
+        </div>
+        <div class="case">
+          <strong>Invoice Processing Pipeline</strong>
+          <p style="font-size:13px;color:var(--muted)">Automated OCR + validation with rules engine. Result: 80% reduction in manual work.</p>
+          <ul style="font-size:13px;color:var(--muted);margin:6px 0 0 18px">
+            <li>99% invoice data accuracy (after QA)</li>
+            <li>Processing time from days to hours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2 style="margin-top:16px">Meet the Team</h2>
+      <div class="team">
+        <div class="member">
+          <img src="https://lance0145.github.io/ailan/assets/lead.jpg" alt="Allan Abendanio" onerror="this.style.opacity=0.6;this.src='';" />
+          <strong>Allan Abendanio</strong>
+          <div style="font-size:13px;color:var(--muted)">Head of AI & Automation — strategy, ML architecture, and client success.</div>
+        </div>
+        <div class="member">
+          <img src="https://lance0145.github.io/ailan/assets/product.jpg" alt="Maria Cruz" onerror="this.style.opacity=0.6;this.src='';" />
+          <strong>Maria Cruz</strong>
+          <div style="font-size:13px;color:var(--muted)">Product & Ops Lead — delivery, onboarding and QA.</div>
+        </div>
+        <div class="member">
+          <img src="https://lance0145.github.io/ailan/assets/engineer.jpg" alt="Alex Tan" onerror="this.style.opacity=0.6;this.src='';" />
+          <strong>Alex Tan</strong>
+          <div style="font-size:13px;color:var(--muted)">Senior ML Engineer — model training and inference systems.</div>
+        </div>
+        <div class="member">
+          <img src="https://lance0145.github.io/ailan/assets/designer.jpg" alt="Dan Star" onerror="this.style.opacity=0.6;this.src='';" />
+          <strong>Dan Star</strong>
+          <div style="font-size:13px;color:var(--muted)">Integration Engineer — APIs, connectors and deployment pipelines.</div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong>25+</strong><div style="font-size:12px;color:var(--muted)">Active Clients</div></div>
+        <div class="stat"><strong>120+</strong><div style="font-size:12px;color:var(--muted)">Projects Delivered</div></div>
+        <div class="stat"><strong>95%</strong><div style="font-size:12px;color:var(--muted)">Client Retention</div></div>
+        <div class="stat"><strong>24/7</strong><div style="font-size:12px;color:var(--muted)">Managed Support</div></div>
+      </div>
+    </section>
+
+    <section id="chatbot" class="chatbot">
+      <div class="card">
+        <h2>AI Chatbot Assistant</h2>
+        <p style="margin:6px 0;color:var(--muted)">Integrate an AI-powered chatbot on your website to answer product inquiries, assist users instantly, and enable on-the-spot ordering.</p>
+        <h3 style="margin-top:10px">Key benefits</h3>
+        <ul>
+          <li><strong>Instant customer assistance</strong> — 24/7 answers to product questions, pricing, availability, and shipping details.</li>
+          <li><strong>Higher conversions</strong> — guide visitors to purchase with real-time suggestions and simplified checkout flows inside chat.</li>
+          <li><strong>Order on the spot</strong> — customers can browse, select, and place orders directly through the chat interface, reducing friction.</li>
+          <li><strong>Lower support costs</strong> — deflect common tickets and handle routine requests automatically.</li>
+          <li><strong>Personalized recommendations</strong> — product suggestions based on user context, history, or past purchases.</li>
+          <li><strong>Lead capture & follow-up</strong> — collect emails, phone numbers, and sync leads to CRM for nurturing.</li>
+          <li><strong>Multilingual support</strong> — serve customers in their language to expand reach.</li>
+          <li><strong>Seamless human handoff</strong> — escalate complex issues to agents with context preserved.</li>
+          <li><strong>Analytics & insights</strong> — learn what users ask and optimize product pages and funnels using chat logs.</li>
         </ul>
-        <p><a href="#contact" class="w3-button btn-primary w3-margin-top"><i class="fa fa-envelope"></i> Talk to Sales</a></p>
+        <p class="note">We can integrate secure payment flows (Stripe, PayPal, local gateways) into the chat for a frictionless ordering experience.</p>
+        <div style="margin-top:10px"><button class="btn" onclick="location.href='#contact'">Request chatbot demo</button></div>
       </div>
-      <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="AI & automation" width="700" height="394">
-      </div>
-    </div>
-  </div>
-
-  <!-- Team -->
-  <div class="w3-container" style="padding:96px 16px" id="team">
-    <h3 class="w3-center">MEET THE TEAM</h3>
-    <p class="w3-center w3-large">Engineers, automation specialists, and strategists</p>
-
-    <div class="w3-row-padding w3-grayscale" style="margin-top:48px">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Lead" style="width:100%">
-          <div class="w3-container">
-            <h3>Allan Abendanio</h3>
-            <p class="w3-opacity">Head of AI &amp; Automation</p>
-            <p>Leads model design, automation architecture, and delivery of production-grade systems.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
+      <div class="card-art" style="height:auto;display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <div style="width:260px;height:220px;border-radius:12px;background:linear-gradient(180deg,#fff,#f1f8ff);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(44,123,229,0.06);flex-direction:column;padding:12px">
+          <div style="font-size:34px">💬</div>
+          <strong style="margin-top:8px">Chat + Order</strong>
+          <p style="font-size:13px;color:var(--muted);text-align:center;margin-top:6px">Sample flow: Product inquiry → Suggest product → Add to cart → Checkout inside chat.</p>
         </div>
       </div>
+    </section>
 
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Product" style="width:100%">
-          <div class="w3-container">
-            <h3>Maria Cruz</h3>
-            <p class="w3-opacity">Product &amp; Ops Lead</p>
-            <p>Coordinates projects, client onboarding, and ensures smooth operations and SLAs.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
+    <section id="testimonials" class="testimonials">
+      <h2 style="margin-top:16px">What clients say</h2>
+      <div class="testimonial"><strong>"Reduced our invoice backlog by 90%—a game changer."</strong><div style="font-size:13px;color:var(--muted);margin-top:6px">— CFO, e‑commerce</div></div>
+      <div class="testimonial"><strong>"The AI assistant handled 60% of incoming chats with excellent accuracy."</strong><div style="font-size:13px;color:var(--muted);margin-top:6px">— Head of Support, SaaS</div></div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2 style="margin-top:16px">FAQ</h2>
+      <div class="faq-item"><strong>How long does a pilot take?</strong><div style="font-size:13px;color:var(--muted);margin-top:6px">Typically 3–6 weeks depending on scope and data readiness.</div></div>
+      <div class="faq-item"><strong>Do you provide ongoing support?</strong><div style="font-size:13px;color:var(--muted);margin-top:6px">Yes — we offer managed operations and SLA-backed support options.</div></div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p>Consultation & Pilot — one-time</p>
+        <p style="font-weight:700;font-size:20px">$1,500</p>
+        <button class="btn">Get Started</button>
       </div>
-
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Engineer" style="width:100%">
-          <div class="w3-container">
-            <h3>Alex Tan</h3>
-            <p class="w3-opacity">Senior ML Engineer</p>
-            <p>Builds models, evaluates results, and automates model lifecycle management.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
+      <div class="plan">
+        <h3>Growth</h3>
+        <p>Production Deployment & Managed Ops</p>
+        <p style="font-weight:700;font-size:20px">$5,000 / mo (example)</p>
+        <button class="btn">Request Quote</button>
       </div>
-
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Designer" style="width:100%">
-          <div class="w3-container">
-            <h3>Dan Star</h3>
-            <p class="w3-opacity">Integration Engineer</p>
-            <p>Connects AI systems to CRMs, helpdesks, and enterprise tools — ensuring reliable integrations.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p>Dedicated team, SLAs & 24/7 Support</p>
+        <p style="font-weight:700;font-size:20px">Custom</p>
+        <button class="btn">Contact Sales</button>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Stats -->
-  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-    <div class="w3-quarter">
-      <span class="w3-xxlarge stat-num">25+</span><br>Active Clients
-    </div>
-    <div class="w3-quarter">
-      <span class="w3-xxlarge stat-num">120+</span><br>Projects Delivered
-    </div>
-    <div class="w3-quarter">
-      <span class="w3-xxlarge stat-num">95%</span><br>Client Retention
-    </div>
-    <div class="w3-quarter">
-      <span class="w3-xxlarge stat-num">24/7</span><br>Managed Support
-    </div>
-  </div>
-
-  <!-- Work -->
-  <div class="w3-container" style="padding:96px 16px" id="work">
-    <h3 class="w3-center">OUR WORK</h3>
-    <p class="w3-center w3-large">Selected case examples</p>
-
-    <div class="w3-row-padding" style="margin-top:32px">
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="w3-card-4">
-          <div class="w3-container">
-            <h4>Customer Support Automation</h4>
-            <p>Implemented LLM-powered virtual agents, cutting average handle time by 45% and implementing seamless escalation paths.</p>
-          </div>
-        </div>
+    <section id="contact" class="contact-card">
+      <div>
+        <strong style="display:block">Ready to automate and scale? Let's talk.</strong>
+        <div style="color:var(--muted);margin-top:6px">Manila, Philippines • Phone: +63 930 022 8998 • Email: <a href="mailto:lance0145@gmail.com">lance0145@gmail.com</a></div>
+        <div style="margin-top:8px;font-size:13px;color:var(--muted)">Or connect with us on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>.</div>
       </div>
-
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="w3-card-4">
-          <div class="w3-container">
-            <h4>Invoice Processing Pipeline</h4>
-            <p>Automated data extraction and validation from supplier invoices, reducing manual processing by 80%.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="w3-card-4">
-          <div class="w3-container">
-            <h4>Data Insights &amp; Dashboards</h4>
-            <p>Built analytics pipelines and dashboards to surface KPIs and improve operational decision-making.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Capabilities -->
-  <div class="w3-container w3-light-grey w3-padding-64">
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h3>Core Capabilities</h3>
-        <p>We combine technical depth and operational excellence to deliver production-ready solutions and staffed services.</p>
-        <p>From data engineering to model deployment and 24/7 operations — we cover the full lifecycle.</p>
-      </div>
-      <div class="w3-col m6">
-        <p class="w3-wide"><i class="fa fa-database w3-margin-right"></i>Data Engineering</p>
-        <div class="w3-grey"><div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div></div>
-
-        <p class="w3-wide"><i class="fa fa-cogs w3-margin-right"></i>Automation / RPA</p>
-        <div class="w3-grey"><div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div></div>
-
-        <p class="w3-wide"><i class="fa fa-robot w3-margin-right"></i>ML &amp; LLM Ops</p>
-        <div class="w3-grey"><div class="w3-container w3-dark-grey w3-center" style="width:88%">88%</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pricing -->
-  <div class="w3-container w3-center" style="padding:96px 16px" id="pricing">
-    <h3>PRICING</h3>
-    <p class="w3-large">Flexible engagement models to match your needs</p>
-
-    <div class="w3-row-padding" style="margin-top:48px">
-      <div class="w3-third w3-section">
-        <ul class="w3-ul w3-white w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-24">Starter</li>
-          <li class="w3-padding-16"><b>Consultation</b> &amp; Pilot</li>
-          <li class="w3-padding-16"><b>Basic</b> Model &amp; Workflow</li>
-          <li class="w3-padding-16"><b>1 month</b> Support</li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide">$ 1,500</h2>
-            <span class="w3-opacity">one-time / pilot</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button btn-primary w3-padding-large">Get Started</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third">
-        <ul class="w3-ul w3-white w3-hover-shadow">
-          <li class="w3-red w3-xlarge w3-padding-32">Growth</li>
-          <li class="w3-padding-16"><b>Production</b> Deployment</li>
-          <li class="w3-padding-16"><b>Integrations</b> &amp; Monitoring</li>
-          <li class="w3-padding-16"><b>Managed Ops</b> (per month)</li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide">$ 5,000</h2>
-            <span class="w3-opacity">monthly (example)</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button btn-primary w3-padding-large">Request Quote</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third w3-section">
-        <ul class="w3-ul w3-white w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-24">Enterprise</li>
-          <li class="w3-padding-16"><b>Custom</b> Architecture</li>
-          <li class="w3-padding-16"><b>Dedicated</b> Team &amp; SLAs</li>
-          <li class="w3-padding-16"><b>24/7</b> Support &amp; Compliance</li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide">Custom</h2>
-            <span class="w3-opacity">contact us for pricing</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button btn-primary w3-padding-large">Contact Sales</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact -->
-  <div class="w3-container w3-light-grey" style="padding:96px 16px" id="contact">
-    <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Ready to automate and scale? Let's talk.</p>
-
-    <div style="margin-top:32px;max-width:900px;margin-left:auto;margin-right:auto">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Manila, Philippines</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 930 022 8998</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: lance0145@gmail.com</p>
-
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Company (optional)" name="Company"></p>
-        <p><textarea class="w3-input w3-border" placeholder="Message / Brief" required name="Message" rows="5"></textarea></p>
-        <p>
-          <button class="w3-button btn-primary" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
+      <form onsubmit="event.preventDefault();location.href='mailto:lance0145@gmail.com?subject=Inquiry%20from%20website&body=I%20am%20interested%20in%20your%20services.';" style="display:flex;gap:8px;align-items:center">
+        <input placeholder="Your message" aria-label="message" style="padding:10px 12px;border-radius:10px;border:2px solid #fff;box-shadow:inset 0 1px 0 rgba(0,0,0,0.02)" />
+        <button class="btn" type="submit">Send Message</button>
       </form>
+    </section>
 
-      <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:24px" alt="map">
-    </div>
+    <footer>
+      <small>© AILan — AI & Automation Outsourcing • Built with a playful theme</small>
+    </footer>
   </div>
-
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-48">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section" style="margin-top:12px">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p class="w3-small">© <strong>AILan</strong> — AI &amp; Automation Outsourcing</p>
-    <p class="w3-small">Built with W3Schools Spaces template.</p>
-  </footer>
 
   <script>
-    var mySidebar = document.getElementById("mySidebar");
-    function w3_open(){ mySidebar.style.display = (mySidebar.style.display === 'block') ? 'none' : 'block'; }
-    function w3_close(){ mySidebar.style.display = "none"; }
-    // minimal safety: prevent external widget from blocking rendering on Pages
-    // (If you want to add a chat widget later, include it here with async/defer)
+    // small UX: smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
   </script>
+
   <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="mPWx97EZaIrO2WtK1eznw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
   </script>
